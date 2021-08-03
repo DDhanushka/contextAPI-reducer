@@ -1,5 +1,5 @@
 import React, { useReducer, useContext } from "react";
-
+import "./App.css";
 import CompA from "./Components/CompA";
 import CompB from "./Components/CompB";
 import CompC from "./Components/CompC";

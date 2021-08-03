@@ -6,13 +6,13 @@ export const counterReducer = (state, action) => {
     case "decrement":
       return { ...state, counterOne: state.counterOne - action.value };
     case "reset1":
-      return counterState;
+      return {...state, counterOne: counterState.counterTwo};
     case "increment2":
       return { ...state, counterTwo: state.counterTwo + action.value };
     case "decrement2":
       return { ...state, counterTwo: state.counterTwo - action.value };
     case "reset2":
-      return counterState;
+      return {...state, counterTwo: counterState.counterTwo};
     default:
       return state;
   }

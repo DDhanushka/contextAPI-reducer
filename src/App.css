@@ -1,0 +1,16 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+}
+button {
+  margin-right: 5px;
+  min-width: 100px;
+  min-height: 30px;
+  background-color: #eee;
+}
+div {
+  border: 1px solid #999;
+  border-style: dashed;
+}
