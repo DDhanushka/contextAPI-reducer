@@ -1,27 +1,9 @@
 import React, { useReducer } from "react";
 
-const initialState = { counterOne: 0, counterTwo: 100 };
-const reducer = (state, action) => {
-  switch (action.type) {
-    case "increment":
-      return { ...state, counterOne: state.counterOne + action.value };
-    case "decrement":
-      return { ...state, counterOne: state.counterOne - action.value };
-    case "reset1":
-      return initialState;
-    case "increment2":
-      return { ...state, counterTwo: state.counterTwo + action.value };
-    case "decrement2":
-      return { ...state, counterTwo: state.counterTwo - action.value };
-    case "reset2":
-      return initialState;
-    default:
-      return state;
-  }
-};
+import { counterReducer, counterState } from "../Reducers/counterReducer";
 
 const CounterOne = () => {
-  const [count, dispatch] = useReducer(reducer, initialState);
+  const [count, dispatch] = useReducer(counterReducer, counterState);
   return (
     <div>
       <h3>Count1 : {count.counterOne}</h3>
