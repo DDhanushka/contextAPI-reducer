@@ -18,7 +18,7 @@ const Counter = () => {
       <button onClick={() => countDispatch({ type: "decrement", value: 5 })}>
         Decrement 5
       </button>
-      <button onClick={() => countDispatch({ type: "reset2" })}>Reset</button>
+      <button onClick={() => countDispatch({ type: "reset1" })}>Reset</button>
 
       <hr />
       <h3>Count2 : {countState.counterTwo}</h3>
@@ -34,7 +34,7 @@ const Counter = () => {
       <button onClick={() => countDispatch({ type: "decrement2", value: 5 })}>
         Decrement 5
       </button>
-      <button onClick={() => countDispatch({ type: "reset1" })}>Reset</button>
+      <button onClick={() => countDispatch({ type: "reset2" })}>Reset</button>
     </div>
   );
 };
